@@ -5,6 +5,8 @@ var TelegramBot = require('node-telegram-bot-api'),
 
 bot.on('message', function(msg) {
     var chatId = msg.chat.id,
-        file = __dirname+'/town.mp3';
-    bot.sendAudio(chatId, file);
+        file = __dirname+'/document.pdf';
+
+    bot.sendMessage(chatId, 'Senf u document!');
+    bot.sendDocument(chatId, file);
 });
