@@ -64,6 +64,8 @@ function checkAccess(chatId) {
         });
 
 
+        
+
         db.close();
     });
 
