@@ -63,9 +63,6 @@ function checkAccess(chatId) {
             field = null;
         });
 
-
-        
-
         db.close();
     });
 
