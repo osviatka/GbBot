@@ -68,7 +68,6 @@ function checkAccess(chatId) {
 
 }
 
-
 function defaultCommand(chatId) {
     bot.sendMessage('Hello! It is default command :)');
 }
