@@ -42,6 +42,7 @@ function login(chatId, text) {
         }
     }
 }
+
 function checkAccess(chatId) {
     MongoClient.connect(dbConfig, function(err, db) {
         var collection = db.collection('user');
@@ -67,6 +68,7 @@ function checkAccess(chatId) {
     });
 
 }
+
 
 function defaultCommand(chatId) {
     bot.sendMessage('Hello! It is default command :)');

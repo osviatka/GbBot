@@ -10,3 +10,4 @@ bot.on('message', function(msg) {
     bot.sendMessage(chatId, 'Senf u document!');
     bot.sendDocument(chatId, file);
 });
+
