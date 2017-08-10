@@ -4,3 +4,8 @@ var TelegramBot = require('node-telegram-bot-api'),
     bot = new TelegramBot(token, {polling: true});
 
 
+bot.on('message', function(msg) {
+    var chatId = msg.chat.id,
+        file = __dirname+'/document.pdf';
+
+});
