@@ -4,8 +4,6 @@ var TelegramBot = require('node-telegram-bot-api'),
     token = '356188286:AAErLrRuXStooS6VVUCM1CVgMNYygb837vY',
     bot = new TelegramBot(token, {polling: true});
 
-
-
 bot.on('message', function (msg) {
     var chatId = msg.from.id;
 
@@ -68,7 +66,6 @@ function checkAccess(chatId) {
     });
 
 }
-
 
 function defaultCommand(chatId) {
     bot.sendMessage('Hello! It is default command :)');
