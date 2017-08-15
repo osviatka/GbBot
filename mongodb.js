@@ -64,7 +64,6 @@ function checkAccess(chatId) {
 
         db.close();
     });
-
 }
 
 function defaultCommand(chatId) {
